@@ -37,9 +37,11 @@
       v-if="article.img"
       :src="article.img"
       :alt="article.alt"
-      class="max-w-screen-xl mx-auto"
+      class="xl:max-w-screen-xl mx-auto"
     />
-    <p class="max-w-screen-xl mx-auto dark:text-gray-600 text-right italic">
+    <p
+      class="max-w-screen-xl mx-auto dark:text-gray-600 text-center mt-1 italic"
+    >
       {{ article.alt }}
     </p>
     <article
@@ -53,11 +55,15 @@
         max-w-screen-lg
         mx-auto
         mt-6
+        px-4
       "
     >
       <p class="lead">{{ article.description }}</p>
       <nuxt-content :document="article" />
     </article>
+    <div class="max-w-screen-lg mx-auto px-4 my-6" id="content">
+      <AuthorCard />
+    </div>
   </section>
 </template>
 
