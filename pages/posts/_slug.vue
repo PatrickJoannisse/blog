@@ -1,34 +1,61 @@
 <template>
   <section>
-    <header>
-      <h1 class="text-5xl font-extrabold leading-loose">{{ article.title }}</h1>
-      <p class="mb-4">{{ article.description }}</p>
+    <header class="max-w-screen-lg mx-auto px-4 py-4">
+      <h1 class="text-5xl font-extrabold dark:text-gray-100">
+        {{ article.title }}
+      </h1>
+      <div class="text-sm my-4 flex items-center space-x-6">
+        <span class="dark:text-gray-400">{{
+          formatDate(article.updatedAt)
+        }}</span>
+        <p class="sr-only">Tags:</p>
+        <ul class="inline-flex space-x-2 my-2">
+          <li v-for="tag in article.tags" :key="tag">
+            <NuxtLink
+              :to="`/tags/${tag}/`"
+              class="
+                inline-flex
+                items-center
+                px-2.5
+                py-0.5
+                rounded-md
+                font-medium
+                bg-[#3f37c9]
+                hover:bg-[#4361ee]
+                text-white
+                transition
+                duration-150
+              "
+              >#{{ tag }}</NuxtLink
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <div class="text-sm mb-4 flex items-center space-x-6">
-      <span>{{ formatDate(article.updatedAt) }}</span>
-      <ul class="inline-flex space-x-2 my-2">
-        <li v-for="tag in article.tags" :key="tag">
-          <NuxtLink
-            :to="`/tags/${tag}/`"
-            class="
-              inline-flex
-              items-center
-              px-2.5
-              py-0.5
-              rounded-md
-              text-sm
-              font-medium
-              bg-gray-100
-              text-gray-800
-            "
-            >#{{ tag }}</NuxtLink
-          >
-        </li>
-      </ul>
-    </div>
-    <img :src="article.img" :alt="article.alt" />
-    <article class="prose lg:prose-lg max-w-none">
+    <img
+      v-if="article.img"
+      :src="article.img"
+      :alt="article.alt"
+      class="max-w-screen-xl mx-auto"
+    />
+    <p class="max-w-screen-xl mx-auto dark:text-gray-600 text-right italic">
+      {{ article.alt }}
+    </p>
+    <article
+      class="
+        prose
+        lg:prose-lg
+        dark:prose-invert
+        dark:prose-a:text-indigo-400
+        dark:hover:prose-a:text-indigo-500
+        prose-a:transition prose-a:duration-150
+        max-w-screen-lg
+        mx-auto
+        mt-6
+      "
+    >
+      <p class="lead">{{ article.description }}</p>
       <nuxt-content :document="article" />
     </article>
   </section>

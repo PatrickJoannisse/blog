@@ -1,8 +1,19 @@
 <template>
-  <div class="lg:mt-6 max-w-screen-lg mx-auto px-2 py-4">
-    <div class="my-6">
-      <NuxtLink to="/">← Back </NuxtLink>
-    </div>
-    <Nuxt />
+  <div class="dark:bg-gray-900">
+    <SkipLink />
+    <TopNav />
+    <section>
+      <div class="max-w-screen-lg mx-auto px-4 my-6" id="content">
+        <NuxtLink to="/" class="dark:text-gray-300">← Back </NuxtLink>
+      </div>
+      <Nuxt />
+    </section>
+    <Footer />
   </div>
 </template>
+
+<script>
+export default {
+  head() {},
+};
+</script>

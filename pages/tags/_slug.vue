@@ -1,10 +1,12 @@
 <template>
   <section>
     <header>
-      <h1 class="text-5xl font-extrabold leading-loose">{{ slug }}</h1>
+      <h1 class="text-5xl font-extrabold leading-loose">
+        Post about #{{ slug }}
+      </h1>
     </header>
 
-    <div v-if="articles.length">Display posts here</div>
+    <div v-if="articles.length">{{ articles }}</div>
 
     <div v-else>Nothing was found</div>
   </section>

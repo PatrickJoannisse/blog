@@ -1,5 +1,7 @@
 <template>
-  <NuxtLink to="/posts/my-first-blog-post">Link</NuxtLink>
+  <div>
+    <NuxtLink to="/posts/my-first-blog-post">Link</NuxtLink>
+  </div>
 </template>
 
 <script
