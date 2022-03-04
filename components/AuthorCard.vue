@@ -20,7 +20,14 @@
     </div>
     <div class="md:w-5/6">
       <h2
-        class="text-center md:text-left font-bold text-3xl py-2 dark:text-white"
+        class="
+          text-xl text-center
+          md:text-left
+          font-bold
+          md:text-3xl
+          py-2
+          dark:text-white
+        "
       >
         Hi! I'm Patrick Joannisse
       </h2>
