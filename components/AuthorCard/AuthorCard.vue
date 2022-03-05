@@ -4,7 +4,7 @@
   >
     <div class="inline-flex items-center w-full md:w-1/6">
       <img
-        src="https://pbs.twimg.com/profile_images/953749712389095426/tvYWS5Y8_400x400.jpg"
+        src="~/assets/img/me.png"
         class="w-40 mx-auto rounded-full ring-gray-100 ring-2"
       />
     </div>
