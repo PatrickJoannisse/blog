@@ -42,11 +42,14 @@
       :alt="article.alt"
       class="mx-auto xl:max-w-screen-xl"
     />
-    <p class="max-w-screen-xl mx-auto mt-1 italic text-center text-gray-600">
+    <p
+      v-if="article.alt"
+      class="max-w-screen-xl mx-auto mt-1 mb-6 italic text-center text-gray-600"
+    >
       {{ article.alt }}
     </p>
     <article
-      class="max-w-screen-lg px-4 mx-auto mt-6 prose  md:prose-md lg:prose-lg dark:prose-invert dark:prose-a:text-indigo-400 dark:hover:prose-a:text-indigo-500 prose-a:transition prose-a:duration-150"
+      class="max-w-screen-lg px-4 mx-auto prose  md:prose-md lg:prose-lg dark:prose-invert dark:prose-a:text-indigo-400 dark:hover:prose-a:text-indigo-500 prose-a:transition prose-a:duration-150"
     >
       <p class="lead">{{ article.description }}</p>
       <nuxt-content :document="article" />
