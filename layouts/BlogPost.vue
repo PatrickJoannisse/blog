@@ -1,7 +1,7 @@
 <template>
   <div class="dark:bg-gray-900">
     <SkipLink />
-    <TopNav />
+    <Navbar />
     <section>
       <div class="max-w-screen-lg px-4 mx-auto my-6" id="content">
         <NuxtLink
