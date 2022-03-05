@@ -32,22 +32,8 @@
           <p class="sr-only">Tags:</p>
           <ul class="inline-flex my-2 space-x-2">
             <li v-for="tag in article.tags" :key="tag">
-              <NuxtLink
-                :to="`/tags/${tag}/`"
-                class="
-                  inline-flex
-                  items-center
-                  px-2.5
-                  py-0.5
-                  rounded-md
-                  font-medium
-                  bg-[#3f37c9]
-                  hover:bg-[#4361ee]
-                  text-white
-                  transition
-                  duration-150
-                "
-                >#{{ tag }}</NuxtLink
+              <NuxtLink :to="`/tags/${tag}/`">
+                <tag>#{{ tag }}</tag></NuxtLink
               >
             </li>
           </ul>
