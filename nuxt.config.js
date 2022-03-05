@@ -48,6 +48,15 @@ export default {
 
   feed: [],
 
+  hooks: {
+    'content:file:beforeInsert': (article) => {
+      if (article.extension === ".md") {
+        const stats = require('reading-time')(article.text)
+        article.readingStats = stats
+      }
+    }
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {

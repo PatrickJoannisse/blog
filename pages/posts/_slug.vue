@@ -8,6 +8,9 @@
         <span class="dark:text-gray-400">{{
           formatDate(article.updatedAt)
         }}</span>
+        <span class="dark:text-gray-400">
+          {{ article.readingStats.text }}
+        </span>
         <p class="sr-only">Tags:</p>
         <ul class="inline-flex my-2 space-x-2">
           <li v-for="tag in article.tags" :key="tag">
