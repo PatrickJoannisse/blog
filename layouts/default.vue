@@ -1,8 +1,8 @@
 <template>
-  <div class="dark:bg-gray-900">
+  <div class="bg-gray-50 dark:bg-gray-900">
     <SkipLink />
     <TopNav />
-    <section class="max-w-screen-lg mx-auto px-4 py-4" id="content">
+    <section class="max-w-screen-lg px-4 py-4 mx-auto" id="content">
       <Nuxt />
     </section>
     <Footer />
@@ -13,7 +13,7 @@
 export default {
   head: {
     bodyAttrs: {
-      class: "dark:bg-[#0e0e0e]",
+      class: "bg-white dark:bg-[#0e0e0e]",
     },
   },
 };

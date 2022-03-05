@@ -3,14 +3,10 @@
     <SkipLink />
     <TopNav />
     <section>
-      <div class="max-w-screen-lg mx-auto px-4 my-6" id="content">
+      <div class="max-w-screen-lg px-4 mx-auto my-6" id="content">
         <NuxtLink
           to="/"
-          class="
-            dark:text-gray-300 dark:hover:text-gray-100
-            transition
-            duration-150
-          "
+          class="transition duration-150  dark:text-gray-300 dark:hover:text-gray-100"
           >← Back
         </NuxtLink>
       </div>
@@ -22,6 +18,10 @@
 
 <script>
 export default {
-  head() {},
+  head: {
+    bodyAttrs: {
+      class: "bg-gray-50 dark:bg-[#0e0e0e]",
+    },
+  },
 };
 </script>

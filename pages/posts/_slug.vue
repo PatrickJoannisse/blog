@@ -39,9 +39,7 @@
       :alt="article.alt"
       class="mx-auto xl:max-w-screen-xl"
     />
-    <p
-      class="max-w-screen-xl mx-auto mt-1 italic text-center dark:text-gray-600"
-    >
+    <p class="max-w-screen-xl mx-auto mt-1 italic text-center text-gray-600">
       {{ article.alt }}
     </p>
     <article
