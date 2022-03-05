@@ -11,6 +11,8 @@ By default, Tailwind removes all of the default browser styling from paragraphs,
 
 We get lots of complaints about it actually, with people regularly asking us things like:
 
+<youtube-embed url="https://www.youtube.com/embed/d_GN_mjjPSA"></youtube-embed>
+
 > Why is Tailwind removing the default styles on my `h1` elements? How do I disable this? What do you mean I lose all the other base styles too?
 
 We hear you, but we're not convinced that simply disabling our base styles is what you really want. You don't want to have to remove annoying margins every time you use a `p` element in a piece of your dashboard UI. And I doubt you really want your blog posts to use the user-agent styles either — you want them to look _awesome_, not awful.
