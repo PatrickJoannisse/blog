@@ -38,12 +38,15 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/feed',
     '@nuxt/content'
   ],
 
   content: {
     nestedProperties: ['categories.slug']
   },
+
+  feed: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
