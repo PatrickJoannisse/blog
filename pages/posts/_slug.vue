@@ -42,12 +42,15 @@
     </article>
     <div class="max-w-screen-lg px-4 mx-auto my-6" id="content">
       <AuthorCard />
+      <prev-next :prev="prev" :next="next" />
     </div>
   </section>
 </template>
 
 <script>
+import PrevNext from "../../components/PrevNext.vue";
 export default {
+  components: { PrevNext },
   layout: "BlogPost",
   async asyncData({ $content, params }) {
     const article = await $content("articles", params.slug)
@@ -55,7 +58,15 @@ export default {
         status: "published",
       })
       .fetch();
-    return { article };
+    const [prev, next] = await $content("articles")
+      .where({
+        status: "published",
+      })
+      .only(["title", "slug"])
+      .sortBy("createdAt", "asc")
+      .surround(params.slug)
+      .fetch();
+    return { article, prev, next };
   },
   methods: {
     formatDate(date) {
