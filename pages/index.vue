@@ -1,6 +1,6 @@
 <template>
   <div class="space-x-4 md:flex">
-    <div class="w-3/4 space-y-4">
+    <div class="space-y-4 md:w-3/4">
       <div
         v-for="article in articles"
         :key="article.slug"
@@ -40,14 +40,16 @@
         </div>
       </div>
     </div>
-    <aside class="w-1/4">I'm an aside</aside>
+    <aside class="md:w-1/4">I'm an aside</aside>
   </div>
 </template>
 
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const articles = await $content("articles", params.slug)
+    const articles = await $content("articles", {
+      deep: true,
+    })
       .where({
         status: "published",
       })
@@ -60,7 +62,7 @@ export default {
         "updatedAt",
         "readingStats",
       ])
-      .sortBy("createdAt", "asc")
+      .sortBy("createdAt", "desc")
       .fetch();
 
     return {

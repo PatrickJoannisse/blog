@@ -1,9 +1,8 @@
 <template>
   <header>
-    <nav class="flex max-w-screen-lg px-4 py-6 mx-auto space-x-8">
+    <nav class="flex max-w-screen-lg px-4 py-4 mx-auto space-x-8">
       <NavbarNavLink to="/">Home</NavbarNavLink>
-      <NavbarNavLink to="#">Test 1</NavbarNavLink>
-      <NavbarNavLink to="#">Another link</NavbarNavLink>
+      <NavbarNavLink to="/about">About</NavbarNavLink>
       <NavbarNavLink to="#"
         ><svg
           xmlns="http://www.w3.org/2000/svg"

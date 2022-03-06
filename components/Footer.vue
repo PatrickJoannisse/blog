@@ -2,7 +2,7 @@
 <template>
   <footer class="bg-white dark:bg-[#0e0e0e]">
     <div
-      class="max-w-screen-lg px-4 py-12 mx-auto  sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+      class="max-w-screen-lg px-4 py-6 mx-auto  sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
     >
       <div class="flex justify-center space-x-6 md:order-2">
         <NuxtLink
