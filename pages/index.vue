@@ -4,15 +4,15 @@
       <div
         v-for="article in articles"
         :key="article.slug"
-        class="transition duration-150 bg-white border border-gray-300 rounded-md  dark:border-none hover:shadow-md dark:bg-gray-800"
+        class="transition duration-150 bg-white border border-gray-300  dark:border-none hover:shadow-md dark:bg-gray-800"
       >
         <div
           v-if="article.img"
-          class="w-full bg-center bg-cover h-52 rounded-t-md"
+          class="w-full bg-center bg-cover h-52"
           :style="'background-image: url(\'' + article.img + '\')'"
         />
         <h2
-          class="px-4 py-2 text-2xl font-bold  dark:text-white dark:hover:text-gray-300"
+          class="px-4 pt-3 pb-2 text-2xl font-bold  dark:text-white dark:hover:text-gray-300"
         >
           <NuxtLink :to="'/posts/' + article.slug">{{
             article.title
