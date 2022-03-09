@@ -29,10 +29,10 @@
       class="mx-auto xl:max-w-screen-xl"
     />
     <p
-      v-if="article.alt"
-      class="max-w-screen-xl mx-auto mt-1 mb-6 italic text-center text-gray-600"
+      v-if="article.caption"
+      class="max-w-screen-xl mx-auto mt-1 mb-6 italic text-center text-gray-500"
     >
-      {{ article.alt }}
+      {{ article.caption }}
     </p>
     <article
       class="max-w-screen-lg px-4 mx-auto prose  md:prose-md lg:prose-lg dark:prose-invert dark:prose-a:text-indigo-400 dark:hover:prose-a:text-indigo-500 prose-a:transition prose-a:duration-150"

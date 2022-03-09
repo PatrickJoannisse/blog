@@ -6,6 +6,7 @@
       <img
         src="~/assets/img/me.png"
         class="w-40 mx-auto rounded-full ring-gray-100 ring-2"
+        alt="Photo of me"
       />
     </div>
     <div class="md:w-5/6">
