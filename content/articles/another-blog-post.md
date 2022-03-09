@@ -115,15 +115,15 @@ I think most people are going to use [highlight.js](https://highlightjs.org/) or
 
 Here's what a default `tailwind.config.js` file looks like at the time of writing:
 
-```js
-module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [],
-};
+```js{1,3-5}[server.js]
+const http = require('http')
+const bodyParser = require('body-parser')
+
+http.createServer((req, res) => {
+  bodyParser.parse(req, (error, body) => {
+    res.end(body)
+  })
+}).listen(3000)
 ```
 
 Hopefully that looks good enough to you.

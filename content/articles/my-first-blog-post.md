@@ -26,22 +26,27 @@ Factis flumina coissent; ac in tot suppressa spectare limina reluctanti in arbor
 nescius **domum**, excipit. Et et abdita curras Finierat flammae, amplexus
 Phoco. Ille habe mihi refovet erat.
 
-    radcab += opacity_flash(dlcBookmarkLink(2, bmp), 4 + bar);
-    if (5) {
-        paper.oasis *= 70;
-        hibernateSystemWired *= -4;
-    } else {
-        ad += ctrSite;
-    }
-    if (gisDesktop) {
-        wave_servlet_iphone -= pup;
-        encryption_ntfs_itunes += laptop_bios.hard_imap(publicSurge.im(
-                delOnSystem), dynamicMini, snmp_e * linkBounce);
-        natPointBios.diskPostscriptRaw = box_session_dv;
-    } else {
-        computerUserTrinitron = subnet;
-        pc.kernel_telnet -= flatbed(ring_token_drop);
-    }
+```js
+radcab += opacity_flash(dlcBookmarkLink(2, bmp), 4 + bar);
+if (5) {
+  paper.oasis *= 70;
+  hibernateSystemWired *= -4;
+} else {
+  ad += ctrSite;
+}
+if (gisDesktop) {
+  wave_servlet_iphone -= pup;
+  encryption_ntfs_itunes += laptop_bios.hard_imap(
+    publicSurge.im(delOnSystem),
+    dynamicMini,
+    snmp_e * linkBounce
+  );
+  natPointBios.diskPostscriptRaw = box_session_dv;
+} else {
+  computerUserTrinitron = subnet;
+  pc.kernel_telnet -= flatbed(ring_token_drop);
+}
+```
 
 ## Libat spes
 
