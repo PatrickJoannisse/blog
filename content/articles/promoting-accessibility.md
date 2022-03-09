@@ -39,8 +39,16 @@ A final example I like to give is of a bar chart. You're making a report and on 
 
 ### Question 2: Can I do everything using only a keyboard?
 
-This one is a bit tricky because you, the person reading this, might be using your mouse all the time and not know how to use a keyboard to navigate a whole website. It's actually easy and is actually helpful to prevent repetitive strain injuries and will help you think better about the importance of keyboard accessibility.
+This one is a bit tricky because you, the person reading this, might be using your mouse all the time and not know how to use a keyboard to navigate a whole website. It's actually easy and reducing your mouse use can help prevent repetitive strain injuries. You can learn [how to browse a website using only a keyboard here](https://www.accessibility-developer-guide.com/knowledge/keyboard-only/browsing-websites/).
 
-Sometimes I'm booking a hotel room for a trip and I wish I could just type the date instead of clicking a bunch of time to find the dates. Wouldn't it be easier anyway?
+Sometimes I'm booking a hotel room for a trip and I wish I could just type the dates instead of clicking a bunch of time until I picked the right day, month and year. Wouldn't it be easier anyway if I could input the date? But I get it. I'm a developer too, so I understand that I probably want to make sure the dates are provided in a specific format, and having a calendar can be helpful to visually see the month and day. I'd have to do some real math in my head or look at a calendar anyway to see when the second Friday in September is, because that's when I want to book room. So having a calendar is helpful. But I shouldn't be forced to use a mouse and it would befinitely be nicer to be able to input the date directly.
 
-### Question 3:
+### Question 3: Can I actually read this?
+
+This question has many facets. The first one is can I, at a quick glance, find where the content I care about starts and end on a page? Imagine if you were looking for a recipe and instead of having a simple section with a list of ingredients and measurements, you had to read through paragraphs and parse the instructions. How frustrating. I'm in the middle of mixing the eggs and now you're telling me I was supposed to seperate them first?
+
+Another example is using abbreviations or unusual phrases or idioms. Anyone who joined a new team will know how disorienting it is when you have to learn dozens of new abbreviations. How about relearning some too while we're at it? I used to work at an agency and during the project, my team lead said the PMO needed to be notified about the progress of our sprint. I mean, I knew this project was important for Canadians, but I had no idea the Prime Minister's Office needed to be updated on it. My boss had a good laugh and corrected me. She meant the project management office.
+
+### Question 4: Can I use this on mobile?
+
+The majority (insert source) of content today is consumed on a mobile device.
