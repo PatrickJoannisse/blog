@@ -21,8 +21,8 @@
         quo consequatur atque optio, libero eveniet perferendis officiis magni
         omnis quae dignissimos esse, voluptatem at molestiae in! Cum, debitis!
       </p>
-      <div class="flex items-center mt-6 space-x-4 md:space-x-2">
-        <AuthorCardSocialLink href="https://twitter.com/PJoannisse">
+      <div class="flex items-center mt-6 -ml-2 space-x-4 md:space-x-2">
+        <AuthorCardSocialLink href="https://twitter.com/MrJoannisse">
           <svg
             class="w-5 h-5 mt-0.5"
             fill="currentColor"
@@ -35,7 +35,7 @@
           </svg>
           <span class="md:sr-only">Twitter</span>
         </AuthorCardSocialLink>
-        <AuthorCardSocialLink href="#">
+        <AuthorCardSocialLink href="https://github.com/PatrickJoannisse">
           <svg
             class="w-5 h-5 mt-0.5"
             fill="currentColor"

@@ -1,9 +1,34 @@
 <template>
   <div class="dark:bg-gray-900">
     <SkipLink />
+    <header
+      class="
+        max-w-screen-lg
+        pt-4
+        mx-auto
+        text-center
+        border-b border-transparent
+        dark:border-gray-700
+      "
+    >
+      <NuxtLink
+        to="/"
+        class="
+          inline-flex
+          items-center
+          pt-4
+          text-4xl
+          font-extrabold
+          dark:text-white
+          font-logo
+        "
+        >Red Tape &amp; Dragons</NuxtLink
+      >
+    </header>
     <Navbar />
     <section>
       <div class="max-w-screen-lg px-4 mx-auto my-6" id="content">
+        <!--
         <NuxtLink
           to="/"
           class="inline-flex items-center space-x-2 transition duration-150  dark:text-gray-300 dark:hover:text-gray-100"
@@ -22,7 +47,7 @@
             />
           </svg>
           <span>Back</span>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
       <Nuxt />
     </section>

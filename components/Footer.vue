@@ -2,7 +2,7 @@
 <template>
   <footer class="bg-white dark:bg-[#0e0e0e]">
     <div
-      class="max-w-screen-lg px-4 py-6 mx-auto  sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
+      class="max-w-screen-lg px-4 py-6 mx-auto  sm:px-6 md:flex md:items-center md:justify-between"
     >
       <div class="flex justify-center space-x-6 md:order-2">
         <NuxtLink
@@ -63,7 +63,7 @@
       </div>
       <div class="mt-8 md:mt-0 md:order-1">
         <p class="text-base text-center text-dark-700 dark:text-gray-400">
-          &copy; 2022 Patrick Joannisse.
+          &copy; 2022 Red Tape &amp; Dragons.
         </p>
       </div>
     </div>

@@ -1,47 +1,48 @@
 <template>
-  <div class="space-x-4 md:flex">
-    <div class="space-y-4 md:w-3/4">
+  <section class="space-y-4">
+    <article
+      v-for="(article, index) in articles"
+      :key="article.slug"
+      class="bg-white border border-gray-300 rounded-md  lg:flex dark:border-none hover:shadow-md dark:bg-gray-800"
+    >
       <div
-        v-for="article in articles"
-        :key="article.slug"
-        class="transition duration-150 bg-white border border-gray-300  dark:border-none hover:shadow-md dark:bg-gray-800"
-      >
-        <div
-          v-if="article.img"
-          class="w-full bg-center bg-cover h-52"
-          :style="'background-image: url(\'' + article.img + '\')'"
-        />
-        <h2
-          class="px-4 pt-3 pb-2 text-2xl font-bold  dark:text-white dark:hover:text-gray-300"
-        >
-          <NuxtLink :to="'/posts/' + article.slug">{{
-            article.title
-          }}</NuxtLink>
-        </h2>
+        v-if="article.img"
+        class="w-full bg-center bg-cover  h-44 lg:w-1/2 lg:h-auto rounded-t-md lg:rounded-l-md"
+        :style="'background-image: url(\'' + article.img + '\')'"
+      />
+      <div :class="article.img ? 'w-full lg:w-1/2' : ''">
+        <header>
+          <h2
+            class="px-4 pt-3 pb-2 text-xl font-bold  dark:text-white dark:hover:text-gray-300"
+          >
+            <NuxtLink :to="'/posts/' + article.slug">{{
+              article.title
+            }}</NuxtLink>
+          </h2>
 
-        <p v-if="!article.img" class="px-4 pb-4 dark:text-gray-300">
-          {{ article.description }}
-        </p>
-        <div class="flex items-center px-4 pb-2 space-x-6 text-sm">
-          <span class="dark:text-gray-400">{{
-            formatDate(article.updatedAt)
-          }}</span>
-          <span class="dark:text-gray-400">
-            {{ article.readingStats.text }}
-          </span>
           <p class="sr-only">Tags:</p>
-          <ul class="inline-flex my-2 space-x-2">
+          <ul class="inline-flex px-4 my-2 space-x-2">
             <li v-for="tag in article.tags" :key="tag">
               <NuxtLink :to="`/tags/${tag}/`">
                 <tag>#{{ tag }}</tag></NuxtLink
               >
             </li>
           </ul>
+        </header>
+        <p class="px-4 pb-4 mt-3 leading-relaxed dark:text-gray-300">
+          {{ article.description }}
+        </p>
+        <div class="flex items-end px-4 pb-2 space-x-6 text-sm">
+          <span class="dark:text-gray-400">{{
+            formatDate(article.updatedAt)
+          }}</span>
+          <span class="dark:text-gray-400">
+            {{ article.readingStats.text }}
+          </span>
         </div>
       </div>
-    </div>
-    <aside class="md:w-1/4">I'm an aside</aside>
-  </div>
+    </article>
+  </section>
 </template>
 
 <script>
