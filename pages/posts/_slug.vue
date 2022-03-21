@@ -41,7 +41,7 @@
       <nuxt-content :document="article" />
     </article>
     <div class="max-w-screen-lg px-4 mx-auto my-6" id="content">
-      <AuthorCard />
+      <AuthorCard v-if="article.authorcard" />
       <prev-next :prev="prev" :next="next" />
     </div>
   </section>

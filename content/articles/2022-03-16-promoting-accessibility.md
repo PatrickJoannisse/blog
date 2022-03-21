@@ -6,6 +6,7 @@ alt: ""
 caption: "Accessibility is a team effort"
 tags: ["accessibility"]
 status: "published"
+authorcard: true
 ---
 
 This can be very challenging. There's nothing like spending months of design and coding on an exciting new project and suddenly you're reminded that you need to do an accessibility assessment before going live. The report comes back and it's pages and pages of confusing bad news. The color contrast of some of your buttons is not sufficient, some pages don't mean a success criterion called "Meaningful sequence"? What is going on?
