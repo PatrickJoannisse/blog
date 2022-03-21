@@ -51,4 +51,6 @@ Another example is using abbreviations or unusual phrases or idioms. Anyone who 
 
 ### Question 4: Can I use this on mobile?
 
-The majority (insert source) of content today is consumed on a mobile device.
+The majority of content today is consumed on a mobile device [^1].
+
+[^1]: Source here

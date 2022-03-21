@@ -1,7 +1,7 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
-
+  target: 'server',
+  ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Red Tape & Dragons',
@@ -45,6 +45,7 @@ export default {
   content: {
     liveEdit: false,
     markdown: {
+
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css'
       }
