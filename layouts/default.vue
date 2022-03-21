@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-50 dark:bg-gray-900">
-    <SkipLink />
+    <SkipLinks />
     <header class="max-w-screen-lg pt-4 mx-auto text-center">
       <NuxtLink
         to="/"

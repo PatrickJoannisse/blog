@@ -1,27 +1,12 @@
 <template>
   <div class="dark:bg-gray-900">
-    <SkipLink />
+    <SkipLinks />
     <header
-      class="
-        max-w-screen-lg
-        pt-4
-        mx-auto
-        text-center
-        border-b border-transparent
-        dark:border-gray-700
-      "
+      class="max-w-screen-lg pt-4 mx-auto text-center border-b border-transparent  dark:border-gray-700"
     >
       <NuxtLink
         to="/"
-        class="
-          inline-flex
-          items-center
-          pt-4
-          text-4xl
-          font-extrabold
-          dark:text-white
-          font-logo
-        "
+        class="inline-flex items-center pt-4 text-4xl font-extrabold  dark:text-white font-logo"
         >Red Tape &amp; Dragons</NuxtLink
       >
     </header>
@@ -31,7 +16,7 @@
         <!--
         <NuxtLink
           to="/"
-          class="inline-flex items-center space-x-2 transition duration-150  dark:text-gray-300 dark:hover:text-gray-100"
+          class="inline-flex items-center space-x-2 transition duration-150 dark:text-gray-300 dark:hover:text-gray-100"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-4 h-4 mt-0.5"
