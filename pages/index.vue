@@ -5,9 +5,11 @@
       :key="article.slug"
       class="bg-white border border-gray-300 rounded-md  lg:flex dark:border-none hover:shadow-md dark:bg-gray-800"
     >
-      <div
+      <NuxtLink
+        :to="'/posts/' + article.slug"
+        :aria-label="'Read ' + article.title"
         v-if="article.img"
-        class="w-full bg-center bg-cover  h-44 lg:w-1/2 lg:h-auto rounded-t-md lg:rounded-l-md lg:rounded-t-none"
+        class="block w-full bg-center bg-cover  h-44 lg:w-1/2 lg:h-auto rounded-t-md lg:rounded-r-none lg:rounded-l-md"
         :style="'background-image: url(\'' + article.img + '\')'"
       />
       <section :class="article.img ? 'w-full lg:w-1/2' : ''">
