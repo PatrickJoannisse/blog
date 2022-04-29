@@ -7,7 +7,7 @@
       <NuxtLink
         to="/"
         class="inline-flex items-center pt-4 text-4xl font-extrabold  dark:text-white font-logo"
-        >Red Tape &amp; Dragons</NuxtLink
+        >Patrick Joannisse</NuxtLink
       >
     </header>
     <Navbar />

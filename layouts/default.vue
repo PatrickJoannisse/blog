@@ -14,7 +14,7 @@
           dark:text-white
           font-logo
         "
-        >Red Tape &amp; Dragons</NuxtLink
+        >Patrick Joannisse</NuxtLink
       >
     </header>
     <Navbar />

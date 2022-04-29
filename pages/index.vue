@@ -1,9 +1,9 @@
 <template>
-  <div class="space-y-4">
+  <div class="space-y-4 divide-y divide-gray-700">
     <article
       v-for="(article, index) in articles"
       :key="article.slug"
-      class="bg-white border border-gray-300 rounded-md  lg:flex dark:border-none hover:shadow-md dark:bg-gray-800"
+      class="py-4 lg:flex"
     >
       <NuxtLink
         :to="'/posts/' + article.slug"
@@ -15,7 +15,7 @@
       <section :class="article.img ? 'w-full lg:w-1/2' : ''">
         <header>
           <h2
-            class="px-4 pt-3 pb-2 text-xl font-bold  dark:text-white dark:hover:text-gray-300"
+            class="px-4 pt-3 pb-2 text-3xl font-bold  dark:text-white dark:hover:text-gray-300"
           >
             <NuxtLink :to="'/posts/' + article.slug">{{
               article.title
