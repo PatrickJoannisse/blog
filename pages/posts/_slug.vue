@@ -100,7 +100,14 @@ export default {
   },
   head() {
     return {
-      title: this.article.title + " • Red Tape & Dragons",
+      title: this.article.title + " • Patrick Joannisse",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content: this.article.description,
+        },
+      ],
     };
   },
 };
