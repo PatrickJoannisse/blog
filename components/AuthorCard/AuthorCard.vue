@@ -16,12 +16,9 @@
         Hi! I'm Patrick Joannisse
       </h2>
       <p class="text-center dark:text-gray-400 md:text-left">
-        I'm a senior software developer, public servant and overall geek. Lorem
-        ipsum dolor, sit amet consectetur adipisicing elit. Aliquid iusto fugit
-        quo consequatur atque optio, libero eveniet perferendis officiis magni
-        omnis quae dignissimos esse, voluptatem at molestiae in! Cum, debitis!
+        I'm a senior software developer, public servant and overall geek.
       </p>
-      <div class="flex items-center mt-6 -ml-2 space-x-4 md:space-x-2">
+      <div class="flex items-center mt-6 space-x-4 md:space-x-2">
         <AuthorCardSocialLink href="https://twitter.com/MrJoannisse">
           <svg
             class="w-5 h-5 mt-0.5"
@@ -33,7 +30,7 @@
               d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84"
             />
           </svg>
-          <span class="md:sr-only">Twitter</span>
+          <span class="sr-only">Twitter</span>
         </AuthorCardSocialLink>
         <AuthorCardSocialLink href="http://linkedin.com/in/patrick-joannisse">
           <svg
@@ -49,6 +46,7 @@
               clip-rule="evenodd"
             ></path>
           </svg>
+          <span class="sr-only">LinkedIn</span>
         </AuthorCardSocialLink>
         <AuthorCardSocialLink href="https://github.com/PatrickJoannisse">
           <svg
@@ -63,7 +61,7 @@
               clip-rule="evenodd"
             />
           </svg>
-          <span class="md:sr-only">Github</span>
+          <span class="sr-only">Github</span>
         </AuthorCardSocialLink>
       </div>
     </div>
