@@ -32,10 +32,10 @@
               ></path></svg
           ></a>
         </div>
-        <div class="flex lg:space-x-6 lg:inline-flex lg:flex-row-reverse">
+        <div class="flex mt-2 lg:space-x-6 lg:inline-flex lg:flex-row-reverse">
           <p class="sr-only">Tags:</p>
-          <ul class="inline-flex my-2 space-x-2">
-            <li v-for="tag in article.tags" :key="tag">
+          <ul class="inline-flex flex-wrap -ml-2">
+            <li v-for="tag in article.tags" :key="tag" class="m-2">
               <NuxtLink :to="`/tags/${tag}/`"
                 ><tag>#{{ tag }}</tag></NuxtLink
               >

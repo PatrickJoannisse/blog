@@ -15,7 +15,7 @@
       <section :class="article.img ? 'w-full lg:w-1/2' : ''">
         <header>
           <h2
-            class="px-2 pt-3 pb-2 text-3xl font-bold  dark:text-white dark:hover:text-gray-300"
+            class="px-4 pt-3 pb-2 text-3xl font-bold  dark:text-white dark:hover:text-gray-300"
           >
             <NuxtLink :to="'/posts/' + article.slug">{{
               article.title
@@ -23,18 +23,18 @@
           </h2>
 
           <p class="sr-only">Tags:</p>
-          <ul class="inline-flex px-2 my-2 space-x-2">
-            <li v-for="tag in article.tags" :key="tag">
-              <NuxtLink :to="`/tags/${tag}/`">
-                <tag>#{{ tag }}</tag></NuxtLink
+          <ul class="inline-flex flex-wrap px-2">
+            <li v-for="tag in article.tags" :key="tag" class="m-2">
+              <NuxtLink :to="`/tags/${tag}/`"
+                ><tag>#{{ tag }}</tag></NuxtLink
               >
             </li>
           </ul>
         </header>
-        <p class="px-2 pb-4 mt-3 leading-relaxed dark:text-gray-300">
+        <p class="px-4 pb-4 mt-3 leading-relaxed dark:text-gray-300">
           {{ article.description }}
         </p>
-        <footer class="flex items-end px-2 pb-2 space-x-6 text-sm">
+        <footer class="flex items-end px-4 pb-2 space-x-6 text-sm">
           <span class="dark:text-gray-400">{{
             formatDate(article.updatedAt)
           }}</span>
