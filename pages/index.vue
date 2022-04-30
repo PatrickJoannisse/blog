@@ -20,9 +20,10 @@ export default {
         "slug",
         "tags",
         "updatedAt",
+        "publishedAt",
         "readingStats",
       ])
-      .sortBy("createdAt", "desc")
+      .sortBy("publishedAt", "desc")
       .fetch();
 
     return {

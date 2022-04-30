@@ -7,7 +7,7 @@
       <div class="my-4 text-sm">
         <div class="flex space-x-6 lg:inline-flex lg:w-auto">
           <span class="dark:text-gray-400">{{
-            formatDate(article.updatedAt)
+            formatDate(article.publishedAt)
           }}</span>
           <span class="dark:text-gray-400">
             {{ article.readingStats.text }}
@@ -93,6 +93,7 @@ export default {
   },
   methods: {
     formatDate(date) {
+      date = date + " 00:00:00"; //Fixes the date showing as the day before
       const options = { year: "numeric", month: "long", day: "numeric" };
       return new Date(date).toLocaleDateString("en", options);
     },

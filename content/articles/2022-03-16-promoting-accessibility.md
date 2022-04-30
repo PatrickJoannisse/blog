@@ -6,6 +6,7 @@ alt: ""
 caption: "Accessibility is a team effort"
 tags: ["accessibility"]
 status: "published"
+publishedAt: "2022-04-20"
 authorcard: true
 ---
 

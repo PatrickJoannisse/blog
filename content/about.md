@@ -1,7 +1,7 @@
 ---
 title: What is this blog even about?
 description: The main purpose of this blog is to be an outlet. I like to write and talk about a bunch of stuff including role-playing games like Dungeons & Dragons, public service (I'm a public servant) and coffee.
-authorcard: true
+authorcard: false
 ---
 
 # What this blog even about?

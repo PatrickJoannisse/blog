@@ -5,6 +5,7 @@ description:
   task that required a keen eye for typography and a lot of complex custom CSS.
 tags: ["another-test"]
 status: "draft"
+publishedAt: "2022-03-13"
 ---
 
 By default, Tailwind removes all of the default browser styling from paragraphs, headings, lists and more. This ends up being really useful for building application UIs because you spend less time undoing user-agent styles, but when you _really are_ just trying to style some content that came from a rich-text editor in a CMS or a markdown file, it can be surprising and unintuitive.
