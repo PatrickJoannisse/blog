@@ -16,7 +16,10 @@
         Hi! I'm Patrick Joannisse
       </h2>
       <p class="text-center dark:text-gray-400 md:text-left">
-        I'm a senior software developer, public servant and overall geek.
+        I'm a software developer, public servant and husband. I'm passionate
+        about web accessibility and making the web better. I'm also a huge nerd
+        with too many tabletop role-playing games and I like to write about that
+        too.
       </p>
       <div class="flex items-center mt-6 space-x-4 md:space-x-2">
         <AuthorCardSocialLink href="https://twitter.com/MrJoannisse">
