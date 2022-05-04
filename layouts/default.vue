@@ -14,7 +14,7 @@
           dark:text-white
           font-logo
         "
-        >Patrick Joannisse</NuxtLink
+        >Patrick J</NuxtLink
       >
     </header>
     <Navbar />
