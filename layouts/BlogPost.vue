@@ -7,7 +7,7 @@
       <NuxtLink
         to="/"
         class="inline-flex items-center pt-4 text-4xl font-extrabold  dark:text-white font-logo"
-        >Patrick Joannisse</NuxtLink
+        >Patrick J</NuxtLink
       >
     </header>
     <Navbar />
